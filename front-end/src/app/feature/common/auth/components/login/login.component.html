@@ -1,0 +1,26 @@
+<div class="login-container">
+    <div class="card-container">
+    <form [formGroup]="loginForm" (submit)="onFormSubmit()" >
+        <h1>Login</h1>
+        <div class="input-box">
+            <input type="text" placeholder="Email" formControlName="email">
+            <i class="fas fa-user icons"></i>
+        </div>
+        <div class="input-box">
+            <input [type]="isPasswordVisible?'text':'password'" placeholder="Password" formControlName="password">
+            <i class="fas fa-key icons" *ngIf="loginForm.get('password')?.value==''"></i>
+            <i *ngIf="loginForm.get('password')?.value!=''" [class]="isPasswordVisible?'fas fa-eye icons':'fas fa-eye-slash icons'" (click)="togglePassword()"></i>
+        </div>
+        <div class="remember-forgot">
+            <label>
+                <input type="checkbox">Remember me
+            </label>
+            <a href="">Forgot password?</a>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+        <span class="back-btn" (click)="navigateToHome()"><i class="fas fa-arrow-left"></i> Back</span>
+    </form>
+       
+
+    </div>
+</div>

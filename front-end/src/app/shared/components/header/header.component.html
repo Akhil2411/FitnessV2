@@ -1,0 +1,27 @@
+<div class="bar-icon-top" (click)="openSideBar()">
+    <i class="fas fa-bars"></i>
+</div>
+<div class="header-container" #headerContainer>
+    <nav class="header-container__elements">
+        <div class="logo-container">
+            <div class="bar-icon" (click)="closeSideBar()">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <a href="#" class="nav-logo">
+                <img src="../../../../assets/logo.png" alt="">
+            </a>
+        </div>
+        
+        <div class="nav-links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a> </li>
+                <li><a href="">Products Available</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a routerLink="/login" class="signin-btn">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+</div>

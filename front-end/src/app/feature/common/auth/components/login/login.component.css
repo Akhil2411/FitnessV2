@@ -1,0 +1,123 @@
+::ng-deep :root {
+    --login-text-color: #fff;
+  }
+
+.login-container{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    background-image: url(../../../../../../assets/login-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-container{
+    border-radius: 10px;
+    padding: 3rem 5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    background-color: rgba(0, 0, 0, 0.738);
+}
+
+.card-container h1{
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: var(--login-text-color);
+}
+
+.input-box{
+    display: flex;
+    position: relative;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.input-box input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--login-text-color);
+    width: 100%;
+    padding-right: 1rem;
+    background-color: transparent  !important;
+    color: var(--login-text-color);
+    /* font-size: 1.25rem; */
+}
+
+.input-box input::placeholder{
+    color: var(--login-text-color);
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--login-text-color);;
+    transition: background-color 5000s ease-in-out 0s;   
+}
+
+.icons{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    color: var(--login-text-color);
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.remember-forgot label{
+    padding-right: 3rem;
+    color: var(--login-text-color);
+}
+
+.remember-forgot label input{
+    margin-right: 5px;
+    cursor: pointer;
+ 
+}
+
+.remember-forgot a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--login-text-color);
+}
+
+.remember-forgot a:hover{
+   text-decoration: underline;
+   
+}
+
+.login-btn{
+    width: 100%;
+    background-color: var(--login-text-color);
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.login-btn:hover{
+    color: var(--login-text-color);
+    background-color: black;
+}
+
+.back-btn{
+    color: var(--login-text-color);
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: end;
+    cursor: pointer;
+}

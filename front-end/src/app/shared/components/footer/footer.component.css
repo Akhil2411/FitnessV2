@@ -1,0 +1,59 @@
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    height: 5rem;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.footer-content{
+    margin: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.footer-brand{
+    height: 2.5rem;
+}
+
+.footer-brand img{
+    height: 100%;
+    width: 6rem;
+    display: inline-block;
+    filter: invert(1);
+}
+
+.year-caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.year-caption p{
+    color: rgb(255, 255, 255);
+}
+
+.footer-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links ul li{
+    list-style: none;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.footer-links ul li:hover{
+    color: rgb(241, 0, 0);
+    cursor: pointer;
+}
